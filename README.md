@@ -15,6 +15,11 @@ http://www.ros.org/wiki/viso2 for the list of contained packages.
   - Download the toolbox from [here](https://sites.google.com/site/scarabotix/ocamcalib-toolbox/ocamcalib-toolbox-download-page), put it in your Matlab workspace and execute the `ocam_calib` command to run the application.
   - After calibrating the camera save the generated text file that will be used by the method.
 
+### Building 
+```bash
+catkin build libviso2 --cmake-args -DARM_CROSS_COMPILATION=ON
+```
+- set the cmake option `ARM_CROSS_COMPILATION=ON` if you're building on ARM.
 ### How to execute
 
 * To execute omnidirectional Libviso2 make sure you have a camera node publishing over ROS.
