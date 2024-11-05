@@ -4,7 +4,7 @@ project(libviso2)
 
 find_package(catkin REQUIRED )
 
-option(ARM_CROSS_COMPILATION "ARM Cross Compilation" OFF)
+option(ARM_CROSS_COMPILATION "ARM Cross Compilation" ON)
 
 # use sse3 instruction set
 if(ARM_CROSS_COMPILATION)

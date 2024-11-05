@@ -19,7 +19,7 @@ find_package(catkin REQUIRED COMPONENTS
 find_package(OpenCV REQUIRED)
 find_package(PCL REQUIRED)
 
-option(ARM_CROSS_COMPILATION "ARM Cross Compilation" OFF)
+option(ARM_CROSS_COMPILATION "ARM Cross Compilation" ON)
 
 add_message_files( DIRECTORY msg FILES VisoInfo.msg)
 
@@ -46,7 +46,7 @@ if(ARM_CROSS_COMPILATION)
     add_definitions(-D__ARM_NEON__)
 
   endif(libviso2_FEATURE_NEON)
-    
+
 else(ARM_CROSS_COMPILATION)
   add_definitions(-msse3)
 endif(ARM_CROSS_COMPILATION)

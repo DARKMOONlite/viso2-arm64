@@ -17,9 +17,12 @@ http://www.ros.org/wiki/viso2 for the list of contained packages.
 
 ### Building 
 ```bash
-catkin build libviso2 viso2_ros viso2 --cmake-args -DARM_CROSS_COMPILATION=ON
+catkin build libviso2 viso2_ros viso2 
 ```
-- set the cmake option `ARM_CROSS_COMPILATION=ON` if you're building on ARM.
+- set the cmake option `ARM_CROSS_COMPILATION=OFF` if you're not building on an ARM arch.
+```bash
+catkin build libviso2 viso2_ros viso2  --cmake-args -DARM_CROSS_COMPILATION=OFF
+```
 ### How to execute
 
 * To execute omnidirectional Libviso2 make sure you have a camera node publishing over ROS.

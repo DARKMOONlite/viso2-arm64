@@ -3,7 +3,7 @@
   <arg name="camera" default="/forward"/>
 
   <!-- Run the stereo image proc -->
-  <node ns="$(arg camera)" pkg="image_proc" type="image_proc" name="image_proc" />
+  <node ns="$(arg camera)/color" pkg="image_proc" type="image_proc" name="image_proc" />
 
   <!-- Viso2 -->
   <node pkg="viso2_ros" type="mono_odometer" name="mono_odometer">
