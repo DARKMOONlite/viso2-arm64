@@ -1,6 +1,6 @@
 viso2
 ==========
-ROS Stack containing a wrapper for libviso2, a visual odometry library. 
+ROS Stack containing a wrapper for libviso2, a visual odometry library. Modified for use on a jetson nano with a realsense D435 camera.
 http://www.ros.org/wiki/viso2 for the list of contained packages.
 ***
 
