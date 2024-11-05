@@ -17,7 +17,7 @@ http://www.ros.org/wiki/viso2 for the list of contained packages.
 
 ### Building 
 ```bash
-catkin build libviso2 --cmake-args -DARM_CROSS_COMPILATION=ON
+catkin build libviso2 viso2_ros viso2 --cmake-args -DARM_CROSS_COMPILATION=ON
 ```
 - set the cmake option `ARM_CROSS_COMPILATION=ON` if you're building on ARM.
 ### How to execute
